@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_fragment1"
+        android:enabled="true"
+        android:icon="@drawable/nav_img1"
+        android:title="오늘의 Go전당 페이지"/>
+
+    <item
+        android:id="@+id/item_fragment2"
+        android:enabled="true"
+        android:icon="@drawable/nav_img2"
+        android:title="홈페이지"/>
+
+    <item
+        android:id="@+id/item_fragment3"
+        android:enabled="true"
+        android:icon="@drawable/nav_img3"
+        android:title="글쓰기 페이지"/>
+
+    <item
+        android:id="@+id/item_fragment4"
+        android:enabled="true"
+        android:icon="@drawable/nav_img4"
+        android:title="유저 페이지"/>
+
+
+
+</menu>
