@@ -84,6 +84,46 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="학년"
+            android:textSize="18dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1학년"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2학년"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3학년"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="회원가입"
+            android:textSize="18dp"
+            android:backgroundTint="#7291FF"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+
     </LinearLayout>
 
 </ScrollView>
