@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "115206254046",
+    "project_id": "gogo-firebase",
+    "storage_bucket": "gogo-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115206254046:android:f93ef12a276e0cf371414f",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115206254046-rptbbjijfcmuogsr3uadrtor4fmjo336.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "fcd353af5054564f93f86aaad98a5f395ab29712"
+          }
+        },
+        {
+          "client_id": "115206254046-khrgq392hbdoc4o6lbo9fkjtm1buucl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG-rZaw5kjZJoRll78nmrwBbTBD37LNmg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115206254046-khrgq392hbdoc4o6lbo9fkjtm1buucl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
