@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">고민보다 Go</string>
+    <string name="all_txt">모든 고민을 볼 수 있습니다.</string>
+    <string name="career_txt">진로와 관련된 고민을 해결해보세요!</string>
+    <string name="comp_txt">공모전과 관련된 고민을 해결해보세요!</string>
+    <string name="school_txt">학교생활과 관련된 고민을 해결해보세요!</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
