@@ -21,15 +21,8 @@ class LoginActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
         auth = Firebase.auth
-        val currentUser = auth.currentUser
-
-//        if(currentUser != null){
-//            startActivity(Intent(this, MainActivity::class.java))
-//            finish()
-//        }
 
         val signInBtn = findViewById<Button>(R.id.signIn_btn)
-        signInBtn.isEnabled = false
 
         signInBtn.setOnClickListener {
             val email = findViewById<EditText>(R.id.signIn_email).text.toString()
