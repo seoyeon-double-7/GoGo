@@ -8,8 +8,12 @@
         <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/dd.xml" value="0.10924750679963735" />
-        <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/fragment_all.xml" value="0.1513467293715263" />
-        <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/fragment_all.xml" value="0.22" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/fragment_competition.xml" value="0.1876870457460453" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/fragment_container.xml" value="0.1881145788798632" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/fragment_dream.xml" value="0.22" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/fragment_school.xml" value="0.1876870457460453" />
         <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/fragment_today_go_temple.xml" value="0.1" />
         <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/fragment_user.xml" value="0.22" />
         <entry key="..\:/Users/Mirim/AndroidStudioProjects/GoGo/app/src/main/res/layout/fragment_write.xml" value="0.1" />
@@ -19,10 +23,9 @@
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/activity_login.xml" value="0.1875" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/activity_signup.xml" value="0.1" />
-        <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/fragment_all.xml" value="0.2028985507246377" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/fragment_home.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/fragment_user.xml" value="0.23385416666666667" />
-        <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/fragment_write.xml" value="0.25" />
+        <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/fragment_write.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/search.xml" value="0.11347517730496454" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/menu/menu_search.xml" value="0.1" />
       </map>

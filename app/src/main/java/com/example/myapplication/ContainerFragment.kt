@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.myapplication.tabfragment.AllFragment
 import com.example.myapplication.tabfragment.CompetitionFragment
-import com.example.myapplication.tabfragment.DreamFragment
+import com.example.myapplication.tabfragment.CareerFragment
 import com.example.myapplication.tabfragment.SchoolFragment
 
 class ContainerFragment : Fragment() {
@@ -30,7 +30,7 @@ class ContainerFragment : Fragment() {
         childFragmentManager.beginTransaction().replace(R.id.container, AllFragment()).commit()
     }
     fun toCareer() {
-        childFragmentManager.beginTransaction().replace(R.id.container, DreamFragment()).commit()
+        childFragmentManager.beginTransaction().replace(R.id.container, CareerFragment()).commit()
     }
     fun toComp() {
         childFragmentManager.beginTransaction().replace(R.id.container, CompetitionFragment()).commit()

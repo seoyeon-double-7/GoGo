@@ -16,7 +16,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
-            android:hint="공모전 프래그먼트 입니다."
+            android:hint="진로 프래그먼트 입니다."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.279"
             app:layout_constraintStart_toStartOf="parent"
