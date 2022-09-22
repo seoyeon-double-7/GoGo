@@ -13,14 +13,6 @@ import com.example.myapplication.tabfragment.AllFragment
 
 class HomeFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-
-
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,14 +26,30 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val button = view?.findViewById<ImageButton>(R.id.all_btn)
+        val allButton = view.findViewById<ImageButton>(R.id.all_btn)
+        val careerButton = view.findViewById<ImageButton>(R.id.career_btn)
+        val compButton = view.findViewById<ImageButton>(R.id.comp_btn)
+        val schoolButton = view.findViewById<ImageButton>(R.id.school_btn)
 
-        val transaction = childFragmentManager.beginTransaction()
-        transaction.add(R.id.all_frag_holder,AllFragment()).commit()
 
-        button?.setOnClickListener { view ->
-            Log.d("mytag", "Selected")
+        allButton?.setOnClickListener { view ->
+            Log.d("mytag","all button select")
+            (parentFragment as ContainerFragment).toAll()
+        }
 
+        careerButton?.setOnClickListener { view ->
+            Log.d("mytag","career button select")
+            (parentFragment as ContainerFragment).toCareer()
+        }
+
+        compButton?.setOnClickListener { view ->
+            Log.d("mytag","comp button select")
+            (parentFragment as ContainerFragment).toComp()
+        }
+
+        schoolButton?.setOnClickListener { view ->
+            Log.d("mytag","school button select")
+            (parentFragment as ContainerFragment).toSchool()
         }
 
     }

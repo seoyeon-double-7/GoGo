@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
                         supportFragmentManager.beginTransaction().replace(R.id.fl_container, TodayGoTemple).commit()
                     }
                     R.id.item_fragment2 -> {
-                        val HomeFragment = HomeFragment()
-                        supportFragmentManager.beginTransaction().replace(R.id.fl_container, HomeFragment).commit()
+                        val containerFragment = ContainerFragment()
+                        supportFragmentManager.beginTransaction().replace(R.id.fl_container, containerFragment).commit()
                     }
                     R.id.item_fragment3 -> {
                         val WriteFragment = WriteFragment()

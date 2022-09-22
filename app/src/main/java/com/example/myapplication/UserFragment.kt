@@ -19,6 +19,7 @@ import com.google.firebase.ktx.Firebase
 class UserFragment : Fragment() {
     private  lateinit var auth: FirebaseAuth
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
