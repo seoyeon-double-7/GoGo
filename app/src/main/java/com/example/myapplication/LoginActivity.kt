@@ -47,6 +47,7 @@ class LoginActivity : AppCompatActivity() {
                     } else {
                         Log.w("mytag", "로그인 실패 (사유 : ${it.exception})")
                         Toast.makeText(baseContext, "로그인 실패", Toast.LENGTH_SHORT).show()
+
                         signInBtn.isEnabled = true // 버튼 다시 누르기
                     }
                 }
