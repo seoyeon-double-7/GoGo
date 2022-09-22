@@ -17,7 +17,7 @@ class HomeFragment : Fragment() {
         super.onCreate(savedInstanceState)
 
 
-        //childFragmentManager.beginTransaction().add(R.id.all_frag_holder,AllFragment()).commit();
+
 
     }
 
@@ -26,11 +26,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-//        val button = view?.findViewById<ImageButton>(R.id.all_btn)
-//
-//        button?.setOnClickListener { view ->
-//            Log.d("mytag", "Selected")
-//        }
+
 
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
@@ -38,6 +34,15 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val button = view?.findViewById<ImageButton>(R.id.all_btn)
+
+        val transaction = childFragmentManager.beginTransaction()
+        transaction.add(R.id.all_frag_holder,AllFragment()).commit()
+
+        button?.setOnClickListener { view ->
+            Log.d("mytag", "Selected")
+
+        }
 
     }
 
