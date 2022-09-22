@@ -35,7 +35,7 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"/>
             <TextView
-                android:text="꼬꼬빼빼"
+                android:id="@+id/profile_name"
                 android:textSize="16dp"
                 android:layout_marginLeft="35dp"
                 android:layout_width="match_parent"
@@ -54,7 +54,7 @@
                 android:layout_width="23dp"
                 android:layout_height="23dp"/>
             <TextView
-                android:text="s0123@e-mirim.hs.kr"
+                android:id="@+id/profile_email"
                 android:textSize="16dp"
                 android:layout_marginLeft="35dp"
                 android:layout_width="match_parent"
@@ -73,7 +73,7 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"/>
             <TextView
-                android:text="010-1234-5678"
+                android:id="@+id/profile_phonenum"
                 android:textSize="16dp"
                 android:layout_marginLeft="35dp"
                 android:layout_width="match_parent"
@@ -92,7 +92,7 @@
                 android:layout_width="23dp"
                 android:layout_height="23dp"/>
             <TextView
-                android:text="1학년"
+                android:id="@+id/profile_grade"
                 android:textSize="16dp"
                 android:layout_marginLeft="35dp"
                 android:layout_width="match_parent"
@@ -126,6 +126,7 @@
             android:layout_marginTop="17dp"
             android:backgroundTint="#FF7272"
             android:textColor="#FFFFFF"
+            android:id="@+id/logout"
             android:text="로그아웃"
             android:textSize="15dp"/>
 

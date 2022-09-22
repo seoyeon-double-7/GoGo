@@ -47,12 +47,12 @@ class SignUpActivity : AppCompatActivity() {
             val email = findViewById<EditText>(R.id.email_input).text.toString()
             val password = findViewById<EditText>(R.id.password_input).text.toString()
             val nickname = findViewById<EditText>(R.id.nickname_input).text.toString()
+            val phonenum = findViewById<EditText>(R.id.phonenum_input).text.toString()
 
             val student = hashMapOf(
                 "nickname" to nickname,
-                "email" to email,
-                "password" to password,
-                "grade" to grade
+                "grade" to grade,
+                "phonenum" to phonenum
             )
 
             db.collection("students").document(email)
