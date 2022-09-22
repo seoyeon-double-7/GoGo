@@ -13,7 +13,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="글쓰기"
-            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:textSize="22dp"
             android:layout_marginTop="40dp"
             android:layout_marginLeft="50dp"/>
 
@@ -22,7 +23,7 @@
             android:layout_height="wrap_content"
             android:text="등록"
             android:textColor="#FE3030"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:background="#00ff0000"
             android:layout_marginTop="40dp"
             android:layout_marginLeft="170dp"/>
@@ -46,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="제목"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:layout_marginTop="40dp"
             android:layout_marginLeft="30dp"/>
 
@@ -57,7 +58,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginRight="50dp"
             android:hint="제목을 입력하시오"
-            android:textSize="20dp" />
+            android:textSize="18dp" />
     </LinearLayout>
 
     <View
@@ -77,8 +78,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="주제"
-            android:textSize="20dp"
-            android:layout_marginTop="40dp"
+            android:textSize="18dp"
+            android:layout_marginTop="45dp"
             android:layout_marginLeft="30dp"/>
 
         <Spinner
@@ -109,7 +110,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="내용"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:layout_marginTop="40dp"
             android:layout_marginLeft="30dp"/>
 
@@ -120,7 +121,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginRight="50dp"
             android:hint="내용을 입력하시오"
-            android:textSize="20dp" />
+            android:textSize="18dp" />
     </LinearLayout>
 
 </FrameLayout>
