@@ -46,6 +46,8 @@ class UserFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
         val currentUser = auth.currentUser
         var db = Firebase.firestore
 
