@@ -6,10 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Spinner
+import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
@@ -56,11 +53,13 @@ class WriteFragment : Fragment() {
                     title.setText("")
                     content.setText("")
                     categoryComboBox.setSelection(0)
+                    Toast.makeText(activity, "글 등록 성공!", Toast.LENGTH_SHORT).show()
                 }
                 .addOnFailureListener {
                     e -> Log.d("mytag", "등록 실패")
                 }
-        }
+                regisBtn.isEnabled = false
+            }
 
         return view
     }
