@@ -1,37 +1,67 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Spinner
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [WriteFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class WriteFragment : Fragment() {
-
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
+        auth = Firebase.auth
+
+        val db = Firebase.firestore
+
         val view = inflater.inflate(R.layout.fragment_write, container, false)
-        // Inflate the layout for this fragment
-        //  어댑터를 통해 스피너와 아이템 연결하기
+        val regisBtn = view.findViewById<Button>(R.id.btn_regis)
+
+        // 어댑터를 통해 스피너와 아이템 연결하기
         val sAdapter = ArrayAdapter.createFromResource(requireContext(), R.array.category, android.R.layout.simple_spinner_dropdown_item);
         val categoryComboBox = view.findViewById<Spinner>(R.id.categoryComboBox)
-        categoryComboBox.setAdapter(sAdapter);
+        categoryComboBox.adapter = sAdapter
+
+        regisBtn.setOnClickListener {
+            val title = view.findViewById<EditText>(R.id.input_title)
+            val content = view.findViewById<EditText>(R.id.input_content)
+
+            val currentUser = auth.currentUser
+            val userId = db.collection("students").document(currentUser?.email.toString())
+
+            val write = hashMapOf(
+                "id" to userId,
+                "title" to title.text.toString(),
+                "content" to content.text.toString(),
+                "category" to categoryComboBox.selectedItem.toString(),
+            )
+
+            db.collection("writes").document()
+                .set(write)
+                .addOnSuccessListener {
+                    Log.d("mytag", "등록 성공")
+                    title.setText("")
+                    content.setText("")
+                    categoryComboBox.setSelection(0)
+                }
+                .addOnFailureListener {
+                    e -> Log.d("mytag", "등록 실패")
+                }
+        }
+
         return view
     }
 
