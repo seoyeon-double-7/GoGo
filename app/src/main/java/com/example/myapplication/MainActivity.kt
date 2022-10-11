@@ -1,9 +1,7 @@
 package com.example.myapplication
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationItemView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -23,7 +21,7 @@ class MainActivity : AppCompatActivity() {
                         supportFragmentManager.beginTransaction().replace(R.id.fl_container, TodayGoTemple).commit()
                     }
                     R.id.item_fragment2 -> {
-                        val containerFragment = ContainerFragment()
+                        val containerFragment = HomeContainerFragment()
                         supportFragmentManager.beginTransaction().replace(R.id.fl_container, containerFragment).commit()
                     }
                     R.id.item_fragment3 -> {
@@ -31,8 +29,8 @@ class MainActivity : AppCompatActivity() {
                         supportFragmentManager.beginTransaction().replace(R.id.fl_container, WriteFragment).commit()
                     }
                     R.id.item_fragment4 -> {
-                        val UserFragment = UserFragment()
-                        supportFragmentManager.beginTransaction().replace(R.id.fl_container, UserFragment).commit()
+                        val UserContainerFragment = UserContainerFragment()
+                        supportFragmentManager.beginTransaction().replace(R.id.fl_container, UserContainerFragment).commit()
                     }
                 }
                 true

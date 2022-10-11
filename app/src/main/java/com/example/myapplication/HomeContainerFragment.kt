@@ -6,18 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.myapplication.tabfragment.AllFragment
-import com.example.myapplication.tabfragment.CompetitionFragment
 import com.example.myapplication.tabfragment.CareerFragment
+import com.example.myapplication.tabfragment.CompetitionFragment
 import com.example.myapplication.tabfragment.SchoolFragment
 
-class ContainerFragment : Fragment() {
+class HomeContainerFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_container, container, false)
+        return inflater.inflate(R.layout.fragment_home_container, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -25,6 +25,11 @@ class ContainerFragment : Fragment() {
 
         childFragmentManager.beginTransaction().add(R.id.container, HomeFragment()).commit()
     }
+
+//    fun changeFragment(fragment: Fragment) {
+//        childFragmentManager.beginTransaction().replace(R.id.container, fragment).commit()
+//    }
+
 
     fun toAll() {
         childFragmentManager.beginTransaction().replace(R.id.container, AllFragment()).commit()

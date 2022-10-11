@@ -7,10 +7,16 @@ import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.inflate
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.com.example.myapplication.UserListAdapter
+import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.databinding.FragmentMyWriteBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
@@ -20,11 +26,23 @@ class UserFragment : Fragment() {
     private  lateinit var auth: FirebaseAuth
 
 
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+//        binding = FragmentMyWriteBinding.inflate(layoutInflater)
+        //setContentView(binding.root)
+//
+
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_user, container, false)
+
+
 
         auth = Firebase.auth
 
@@ -46,7 +64,7 @@ class UserFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
+        val myWriteBtn = view.findViewById<Button>(R.id.my_write)
 
         val currentUser = auth.currentUser
         var db = Firebase.firestore
@@ -71,6 +89,11 @@ class UserFragment : Fragment() {
             .addOnFailureListener { exception ->
                 Log.d(TAG, "get failed with ", exception)
             }
+
+        myWriteBtn.setOnClickListener{
+            Log.d("mytag", "내가 쓴 글 보러가기")
+            (parentFragment as UserContainerFragment).toMyWrite()
+        }
     }
 
 }

@@ -31,25 +31,29 @@ class HomeFragment : Fragment() {
         val compButton = view.findViewById<ImageButton>(R.id.comp_btn)
         val schoolButton = view.findViewById<ImageButton>(R.id.school_btn)
 
+//        allButton.setOnClickListener { view ->
+//            Log.d("mytag","all button select")
+//            (parentFragment as HomeContainerFragment).changeFragment(AllFragment())
+//        }
 
         allButton?.setOnClickListener { view ->
             Log.d("mytag","all button select")
-            (parentFragment as ContainerFragment).toAll()
+            (parentFragment as HomeContainerFragment).toAll()
         }
 
         careerButton?.setOnClickListener { view ->
             Log.d("mytag","career button select")
-            (parentFragment as ContainerFragment).toCareer()
+            (parentFragment as HomeContainerFragment).toCareer()
         }
 
         compButton?.setOnClickListener { view ->
             Log.d("mytag","comp button select")
-            (parentFragment as ContainerFragment).toComp()
+            (parentFragment as HomeContainerFragment).toComp()
         }
 
         schoolButton?.setOnClickListener { view ->
             Log.d("mytag","school button select")
-            (parentFragment as ContainerFragment).toSchool()
+            (parentFragment as HomeContainerFragment).toSchool()
         }
 
     }
