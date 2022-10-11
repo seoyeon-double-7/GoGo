@@ -24,12 +24,12 @@ class LoginActivity : AppCompatActivity() {
 
         val signInBtn = findViewById<Button>(R.id.signIn_btn)
 
-//        val currentUser = auth.currentUser
-//        if(currentUser != null) {
-//            // 로그인된 사용자가 있는 경우 필요한 작업 진행 (ex: 그냥 로그인 화면 넘어가서 메인 화면으로 가기)
-//            startActivity(Intent(this, MainActivity::class.java))
-//            finish()
-//        }
+        val currentUser = auth.currentUser
+        if(currentUser != null) {
+            // 로그인된 사용자가 있는 경우 필요한 작업 진행 (ex: 그냥 로그인 화면 넘어가서 메인 화면으로 가기)
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
 
 
         signInBtn.setOnClickListener {
