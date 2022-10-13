@@ -25,15 +25,8 @@ import com.google.firebase.ktx.Firebase
 class UserFragment : Fragment() {
     private  lateinit var auth: FirebaseAuth
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        binding = FragmentMyWriteBinding.inflate(layoutInflater)
-        //setContentView(binding.root)
-//
-
     }
 
     override fun onCreateView(
@@ -41,8 +34,6 @@ class UserFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_user, container, false)
-
-
 
         auth = Firebase.auth
 
