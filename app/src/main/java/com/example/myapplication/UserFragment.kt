@@ -64,7 +64,6 @@ class UserFragment : Fragment() {
 
         docRef.get()
             .addOnSuccessListener { document ->
-                // id가 없을 때
                 if (document != null) {
                     view.findViewById<TextView>(R.id.profile_name).text = document.data!!.get("nickname").toString()
                     view.findViewById<TextView>(R.id.profile_email).text = currentUser?.email.toString()
@@ -72,7 +71,7 @@ class UserFragment : Fragment() {
                     view.findViewById<TextView>(R.id.profile_grade).text = document.data!!.get("grade").toString()
 
                     Log.d(TAG, "DocumentSnapshot data: ${document.data}")
-                } else {
+                } else { // id가 없을 때
                     Log.d(TAG, "No such document")
                 }
             }

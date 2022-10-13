@@ -37,10 +37,10 @@ class WriteFragment : Fragment() {
             val content = view.findViewById<EditText>(R.id.input_content)
 
             val currentUser = auth.currentUser
-            val userId = db.collection("students").document(currentUser?.email.toString())
+            val email = currentUser?.email.toString()
 
             val write = hashMapOf(
-                "id" to userId,
+                "id" to email,
                 "title" to title.text.toString(),
                 "content" to content.text.toString(),
                 "category" to categoryComboBox.selectedItem.toString(),

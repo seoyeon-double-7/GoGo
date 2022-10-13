@@ -20,8 +20,8 @@ class TodayGoTemple : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-//        var view = inflater.inflate(R.layout.fragment_today_go_temple, container, false)
-//
+        var view = inflater.inflate(R.layout.fragment_today_go_temple, container, false)
+
 //        view.findViewById<Button>(R.id.btn_career).setOnClickListener {
 //            val intent = Intent(activity, )
 //        }

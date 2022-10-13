@@ -23,11 +23,11 @@ class UserListAdapter(val itemList: ArrayList<ListItem>):
     // (3) View에 내용 입력
     override fun onBindViewHolder(holder: UserListAdapter.ViewHolder, position: Int) {
         holder.name.text = itemList[position].name
-        holder.number.text = itemList[position].number
+        holder.category.text = itemList[position].category
     }
     // (4) 레이아웃 내 View 연결
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val name: TextView = itemView.findViewById(R.id.tv_name)
-        val number: TextView = itemView.findViewById(R.id.tv_number)
+        val category: TextView = itemView.findViewById(R.id.tv_category)
     }
 }
