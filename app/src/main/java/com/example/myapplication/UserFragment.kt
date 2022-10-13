@@ -7,14 +7,10 @@ import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.inflate
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.com.example.myapplication.UserListAdapter
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.databinding.FragmentMyWriteBinding
 import com.google.firebase.auth.FirebaseAuth

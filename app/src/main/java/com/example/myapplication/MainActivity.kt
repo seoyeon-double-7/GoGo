@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             setOnNavigationItemReselectedListener {
                 when(it.itemId){
                     R.id.item_fragment1 -> {
-                        val TodayGoTemple = TodayGoTemple()
+                        val TodayGoTemple = GoTempleContainerFragment()
                         supportFragmentManager.beginTransaction().replace(R.id.fl_container, TodayGoTemple).commit()
                     }
                     R.id.item_fragment2 -> {

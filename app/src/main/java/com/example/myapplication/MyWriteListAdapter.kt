@@ -8,11 +8,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 
-class UserListAdapter(val itemList: ArrayList<ListItem>):
-    RecyclerView.Adapter<UserListAdapter.ViewHolder>(){
+class MyWriteListAdapter(val itemList: ArrayList<ListItem>):
+    RecyclerView.Adapter<MyWriteListAdapter.ViewHolder>(){
 
     // (1) 아이템 레이아웃과 결합
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserListAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyWriteListAdapter.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_mywrite, parent, false)
         return ViewHolder(view)
     }
@@ -21,7 +21,7 @@ class UserListAdapter(val itemList: ArrayList<ListItem>):
         return itemList.size
     }
     // (3) View에 내용 입력
-    override fun onBindViewHolder(holder: UserListAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MyWriteListAdapter.ViewHolder, position: Int) {
         holder.name.text = itemList[position].name
         holder.category.text = itemList[position].category
     }

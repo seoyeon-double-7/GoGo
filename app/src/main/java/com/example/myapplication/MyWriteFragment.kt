@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.com.example.myapplication.UserListAdapter
+import com.example.myapplication.com.example.myapplication.MyWriteListAdapter
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
@@ -21,7 +21,7 @@ class MyWriteFragment : Fragment() {
 
     //    private lateinit var binding : FragmentMyWriteBinding
     val itemList = arrayListOf<ListItem>()     //아이템 배열
-    val listAdapter = UserListAdapter(itemList)     // 어댑터
+    val listAdapter = MyWriteListAdapter(itemList)     // 어댑터
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
