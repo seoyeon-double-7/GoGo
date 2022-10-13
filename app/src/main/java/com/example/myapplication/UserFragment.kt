@@ -52,6 +52,7 @@ class UserFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val myWriteBtn = view.findViewById<Button>(R.id.my_write)
+        val editProfile = view.findViewById<Button>(R.id.edit_profile)
 
         val currentUser = auth.currentUser
         var db = Firebase.firestore
@@ -80,6 +81,13 @@ class UserFragment : Fragment() {
             Log.d("mytag", "내가 쓴 글 보러가기")
             (parentFragment as UserContainerFragment).toMyWrite()
         }
+
+        editProfile.setOnClickListener {
+            Log.d("mytag", "프로필 수정하기")
+            (parentFragment as UserContainerFragment).toEditProfile()
+        }
+
+
     }
 
 }

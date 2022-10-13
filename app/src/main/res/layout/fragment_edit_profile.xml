@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="프로필 수정하기"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/user_img"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp">
+            <ImageView
+                android:src="@drawable/edit_img1"
+                android:layout_marginLeft="20dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <EditText
+                android:id="@+id/profile_name"
+                android:textSize="16dp"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp">
+            <ImageView
+                android:src="@drawable/edit_img2"
+                android:layout_marginLeft="20dp"
+                android:layout_width="23dp"
+                android:layout_height="23dp"/>
+            <TextView
+                android:id="@+id/profile_email"
+                android:textSize="16dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp">
+            <ImageView
+                android:src="@drawable/edit_img3"
+                android:layout_marginLeft="20dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <EditText
+                android:id="@+id/profile_phonenum"
+                android:textSize="16dp"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp">
+            <ImageView
+                android:src="@drawable/edit_img4"
+                android:layout_marginLeft="20dp"
+                android:layout_width="23dp"
+                android:layout_height="23dp"/>
+            <EditText
+                android:id="@+id/profile_grad"
+                android:textSize="16dp"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/edit_profile"
+            android:layout_width="300dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#7291FF"
+            android:textColor="#FFFFFF"
+            android:text="프로필 수정하기"
+            android:textSize="15dp"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

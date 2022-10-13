@@ -23,14 +23,6 @@ class MyWriteFragment : Fragment() {
     val itemList = arrayListOf<ListItem>()     //아이템 배열
     val listAdapter = MyWriteListAdapter(itemList)     // 어댑터
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-
-    }
-
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

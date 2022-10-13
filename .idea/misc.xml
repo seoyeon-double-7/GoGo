@@ -31,10 +31,13 @@
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/activity_login.xml" value="0.1875" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/activity_signup.xml" value="0.1" />
+        <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/fragment_correction.xml" value="0.11322188449848024" />
+        <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/fragment_edit_profile.xml" value="0.16304347826086957" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/fragment_home.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/fragment_today_go_temple.xml" value="0.18" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/fragment_user.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/fragment_write.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/item_mywrite.xml" value="0.21829710144927536" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/layout/search.xml" value="0.11347517730496454" />
         <entry key="..\:/Users/Mirim/Desktop/GoGo/app/src/main/res/menu/menu_search.xml" value="0.1" />
       </map>
