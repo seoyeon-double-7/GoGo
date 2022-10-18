@@ -22,7 +22,7 @@ class UserFragment : Fragment() {
     private  lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        super.onCreate(savedInstanceState)  //
     }
 
     override fun onCreateView(
