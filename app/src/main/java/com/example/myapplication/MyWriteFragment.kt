@@ -20,8 +20,8 @@ class MyWriteFragment : Fragment() {
     private  lateinit var  auth: FirebaseAuth
 
     //    private lateinit var binding : FragmentMyWriteBinding
-    val itemList = arrayListOf<ListItem>()     //아이템 배열
-    val listAdapter = MyWriteListAdapter(itemList)     // 어댑터
+    // val itemList = arrayListOf<ListItem>()     //아이템 배열
+    // val listAdapter = MyWriteListAdapter(itemList)     // 어댑터
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,7 +29,7 @@ class MyWriteFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_my_write, container, false)
 
-        listAdapter.notifyDataSetChanged()
+        // listAdapter.notifyDataSetChanged()
 
         return view
     }
@@ -48,17 +48,21 @@ class MyWriteFragment : Fragment() {
 
         // 레이아웃 매니저와 어댑터 설정
         dataList?.layoutManager = LinearLayoutManager(requireContext())
-        dataList?.adapter = listAdapter
+        // dataList?.adapter = listAdapter
 
         db.collection("writes")
             .whereEqualTo("id", currentUser?.email.toString())
             .get()
             .addOnSuccessListener { documents ->
+                val itemList = arrayListOf<ListItem>()
                 for (document in documents) {
                     Log.d("mytag", "${document.id} => ${document.data}")
                     // 아이템 추가
-                    itemList.add(ListItem(document.data!!.get("category").toString(), document.data!!.get("title").toString()))
+
+                    itemList.add(ListItem(document.data!!.get("title").toString(), document.data!!.get("category").toString()))
                 }
+                val listAdapter = MyWriteListAdapter(itemList)
+                dataList?.adapter = listAdapter
             }
 
     }
