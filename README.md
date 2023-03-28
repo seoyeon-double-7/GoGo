@@ -32,8 +32,7 @@
 ## 🔨 스택 및 툴
 `Kotlin` `FireBase` `AndroidStudio`
 
-<br><br>
-
+<br>
 ## 📁 UI
 
 ![제목을-입력해주세요_-002 (4)](https://user-images.githubusercontent.com/83990943/228287541-516b5be0-2539-4847-9f1f-ec8d6ef6bbd7.png)
